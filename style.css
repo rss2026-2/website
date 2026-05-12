@@ -317,6 +317,16 @@ a:hover { color: var(--accent-light); }
   border-top: 4px solid var(--accent);
   transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
 }
+
+.feature-card--successes {
+  grid-column: auto;
+}
+
+@media (min-width: 960px) {
+  .feature-card--successes {
+    grid-column: 2;
+  }
+}
 .feature-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-hover);
